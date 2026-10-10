@@ -1,65 +1,68 @@
-# termux Basic Command 
+# Termux Basic Command Setup
 
-## here Command List  :
+This repository contains a clean, working list of common Termux packages and Python packages for quick setup.
 
+## Installation commands
+
+```bash
 apt update
-apt upgrade
-pkg install python -y
-pkg install python2 -y
-pkg install git -y
-pkg install figlet -y
-pkg install toilet -y
-pkg install nano -y
-pkg install php 
+apt upgrade -y
+
+pkg install -y \
+  python \
+  python2 \
+  git \
+  figlet \
+  toilet \
+  nano \
+  php \
+  bash \
+  perl \
+  curl \
+  ruby \
+  openssh \
+  wget \
+  ngrok \
+  nodejs \
+  nmap \
+  grep \
+  golang \
+  vim \
+  w3m \
+  sudo \
+  tsu \
+  npm \
+  emacs \
+  micro \
+  clang \
+  coreutils \
+  tqdm \
+  gnupg \
+  swi-prolog \
+  clib \
+  rdf \
+  chr \
+  http \
+  pcre \
+  pengines \
+  protobufs \
+  sgml \
+  yaml \
+  zlib \
+  ssl \
+  semweb \
+  bdb \
+  odbc \
+  space \
+  sl \
+  top
+
 pip2 install requests
-pip install future
-apt install ruby
-apt install openssh
-apt install wget
-apt install curl
-pkg install bash
-pkg install php
-pkg install perl
-pkg inatall curl
-pkg install ruby
-pkg install nano
-pkg install ngrok
-pkg install nodejs
-pkg install nmap
-pkg install wget
-pkg install grep
-pkg install golang
-pkg install openssh
-pkg install vim
-pkg install w3m
-pkg install toilet
-pkg install w3m
-pkg Install bs4
-pkg Install npm
-pkg Install emacs
-pkg Install micro
-pkg Install figlet
-pkg Install clang
-pkg Install coreutils
-pkg Install tqdm
-pkg Install gnupg
-pkg Install swi-prolog
-pkg Install clib
-pkg Install rdf
-pkg Install chr
-pkg Install http
-pkg Install pcre
-pkg Install pengines
-pkg Install protobufs
-pkg Install sgml
-pkg Install yaml
-pkg Install zlib
-pkg Install ssl
-pkg Install semweb
-pkg Install bdb
-pkg Install odbc
-pkg Install space
-pkg Install sl
-pkg Install top
-pkg install sudo
-pkg install tsu
+pip install future beautifulsoup4
+```
+
+## Notes
+
+- Use `pkg install -y` to avoid interactive prompts.
+- The script in `basic/basic.sh` is the canonical version of this setup.
+- Some packages may not be available in every Termux architecture or package repository, so you may need to adjust based on your device.
