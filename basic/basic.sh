@@ -1,11 +1,11 @@
 #!/bin/bash
 set -u
 
-# Minimal but useful Termux bootstrap
-# Installs a practical set of everyday tools and keeps going even when a package is unavailable.
+# Final minimal Termux setup
+# Installs a practical default toolchain while tolerating unavailable packages.
 
 if ! command -v pkg >/dev/null 2>&1; then
-  echo "This script must be run in Termux."
+  echo "This script must be run inside Termux."
   exit 1
 fi
 
@@ -31,7 +31,6 @@ packages=(
   npm
   golang
   openssh
-  nginx
   nmap
   grep
   coreutils
@@ -60,4 +59,4 @@ if command -v pip >/dev/null 2>&1; then
   pip install --upgrade pip setuptools wheel future beautifulsoup4 || true
 fi
 
-echo "Termux bootstrap completed."
+echo "Termux setup completed."
