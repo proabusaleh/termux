@@ -1,68 +1,57 @@
-# Termux Basic Command Setup
+# Termux Minimal Setup
 
-This repository contains a clean, working list of common Termux packages and Python packages for quick setup.
+This repository contains a simple Termux bootstrap script for installing a practical base toolchain.
 
-## Installation commands
+## Install
 
 ```bash
-apt update
-apt upgrade -y
-
-pkg install -y \
-  python \
-  python2 \
-  git \
-  figlet \
-  toilet \
-  nano \
-  php \
-  bash \
-  perl \
-  curl \
-  ruby \
-  openssh \
-  wget \
-  ngrok \
-  nodejs \
-  nmap \
-  grep \
-  golang \
-  vim \
-  w3m \
-  sudo \
-  tsu \
-  npm \
-  emacs \
-  micro \
-  clang \
-  coreutils \
-  tqdm \
-  gnupg \
-  swi-prolog \
-  clib \
-  rdf \
-  chr \
-  http \
-  pcre \
-  pengines \
-  protobufs \
-  sgml \
-  yaml \
-  zlib \
-  ssl \
-  semweb \
-  bdb \
-  odbc \
-  space \
-  sl \
-  top
-
-pip2 install requests
-pip install future beautifulsoup4
+bash basic/basic.sh
 ```
+
+## What the script installs
+
+The script installs a useful, minimal set of packages for everyday use, including:
+
+- git
+- curl
+- wget
+- nano
+- vim
+- bash
+- perl
+- python
+- python2
+- ruby
+- php
+- nodejs
+- npm
+- golang
+- openssh
+- nmap
+- grep
+- coreutils
+- figlet
+- toilet
+- w3m
+- clang
+- make
+- g++
+- cmake
+- gnupg
+- sudo
+- tsu
+
+It also upgrades Python tools like:
+
+- pip / pip2
+- setuptools
+- wheel
+- requests
+- future
+- beautifulsoup4
 
 ## Notes
 
-- Use `pkg install -y` to avoid interactive prompts.
-- The script in `basic/basic.sh` is the canonical version of this setup.
-- Some packages may not be available in every Termux architecture or package repository, so you may need to adjust based on your device.
+- The script is designed to continue even if some packages are unavailable.
+- Some packages may vary by device architecture or Termux package availability.
+- The canonical script lives in `basic/basic.sh`.
