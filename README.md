@@ -5,7 +5,7 @@ This repository contains a simple Termux bootstrap script for installing a pract
 ## Install
 
 ```bash
-bash basic/basic.sh
+bash basic.sh
 ```
 
 ## What the script installs
@@ -54,4 +54,4 @@ It also upgrades Python tools like:
 
 - The script is designed to continue even if some packages are unavailable.
 - Some packages may vary by device architecture or Termux package availability.
-- The canonical script lives in `basic/basic.sh`.
+- The active script is located at `basic.sh`.
